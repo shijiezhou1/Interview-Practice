@@ -1,0 +1,12 @@
+{
+  "name": "Amazon_interview",
+  "version": "1.0.0",
+  "description": "- algorithm complexity n - the size of the input complexities ordered in from samllest to largest.",
+  "main": "big-o.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

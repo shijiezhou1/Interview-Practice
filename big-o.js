@@ -5,6 +5,7 @@ function binarySearch(arr, key) {
     var elem;
 
     while (low <= high) {
+        // TODO what is the function of mathfloor
         mid = Math.floor((low+high)/2, 10);
         elem = arr[mid];
         console.log(`mid: ${mid} - elem: ${elem}`)

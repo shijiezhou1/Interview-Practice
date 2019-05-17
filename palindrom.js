@@ -1,62 +1,62 @@
 class Palindrom {
 
-  constructor(text) {
-    this.text = text;
-  }
-
-  replaceSpecialCharacter(str) {
-    var regex = /[^A-Za-z0–9]/gi;
-    var removeNonalphanumericCharacter = /[\W_]/gi;
-    return str.replace(regex, '');
-  }
-
-  turnCharacterToLowCase(str) {
-    return str.toLowerCase(str);
-  }
-
-  splitString(str) {
-    return str.split("");
-  }
-
-  compareStringForLoop(str) {
-    for(var i=0; i < (str.length)/2; i++) {
-      if(str[i] !== str[str.length-1-i]){
-        return false;
-      }
+    constructor(text) {
+        this.text = text;
     }
-    return true;
-  }
 
-  compareStringWhileLoop(str) {
-    var i = 0;
-    while(i < (str.length)/2) {
-      if(str[i] !== str[str.length-1-i]){
-        return false;
-      }
-      i++;
+    replaceSpecialCharacter(str) {
+        let regex = /[^A-Za-z0–9]/gi;
+        let removeNonalphanumericCharacter = /[\W_]/gi;
+        return str.replace(regex, '');
     }
-    return true;
-  }
 
-  methodOneForLoop() {
-    var result = this.replaceSpecialCharacter(this.text);
-    result = this.turnCharacterToLowCase(result);
-    result = this.splitString(result);
-    result = this.compareStringForLoop(result);
-    return result;
-  }
+    turnCharacterToLowCase(str) {
+        return str.toLowerCase(str);
+    }
 
-  methodTwoWhileLoop(){
-    var result = this.replaceSpecialCharacter(this.text);
-    result = this.turnCharacterToLowCase(result);
-    result = this.splitString(result);
-    result = this.compareStringWhileLoop(result);
-    return result;
-  }
+    splitString(str) {
+        return str.split("");
+    }
 
-  methodThreeWhileReverseLoop(){
-    
-  }
+    compareStringForLoop(str) {
+        for (let i = 0; i < (str.length) / 2; i++) {
+            if (str[i] !== str[str.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    compareStringWhileLoop(str) {
+        let i = 0;
+        while (i < (str.length) / 2) {
+            if (str[i] !== str[str.length - 1 - i]) {
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+
+    methodOneForLoop() {
+        let result = this.replaceSpecialCharacter(this.text);
+        result = this.turnCharacterToLowCase(result);
+        result = this.splitString(result);
+        result = this.compareStringForLoop(result);
+        return result;
+    }
+
+    methodTwoWhileLoop() {
+        let result = this.replaceSpecialCharacter(this.text);
+        result = this.turnCharacterToLowCase(result);
+        result = this.splitString(result);
+        result = this.compareStringWhileLoop(result);
+        return result;
+    }
+
+    methodThreeWhileReverseLoop() {
+
+    }
 
 }
 

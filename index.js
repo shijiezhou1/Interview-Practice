@@ -1,0 +1,3 @@
+/**
+ * Start all the test
+ */

@@ -57,7 +57,6 @@ class Palindrom {
     methodThreeWhileReverseLoop() {
 
     }
-
 }
 
 console.log('Is ABCBAc@@@ Palindrom? ', new Palindrom('ABCBAc@@@').methodTwoWhileLoop());

@@ -4,7 +4,8 @@
   "description": "- algorithm complexity n - the size of the input complexities ordered in from samllest to largest.",
   "main": "big-o.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node"
   },
   "keywords": [],
   "author": "",
